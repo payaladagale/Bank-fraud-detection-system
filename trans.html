@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection System</title>
+  <link rel="stylesheet" href="trans.css">
+</head>
+<body>
+  <header>
+    <h1>Fraud Detection System</h1>
+  </header>
+  <main>
+    <section id="transaction-input">
+      <h2>Input Transaction Data</h2>
+      <form id="transaction-form">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="merchant">Merchant:</label>
+        <input type="text" id="merchant" name="merchant" required>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="transaction-list">
+      <h2>Transaction List</h2>
+      <ul id="transactions"></ul>
+    </section>
+    <section id="fraud-alerts">
+      <h2>Fraud Alerts</h2>
+      <div id="alerts"></div>
+    </section>
+  </main>
+  <script src="trans.js"></script>
+</body>
+</html>
